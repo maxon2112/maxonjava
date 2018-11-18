@@ -1,4 +1,5 @@
 .gradle
+ build
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -13,5 +14,3 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 .idea/workspace.xml
 .idea/misc.xml
-sandbox/build/classes/java/main/MyFirstProgramm.class
-sandbox/build/distributions/sandbox.tar
