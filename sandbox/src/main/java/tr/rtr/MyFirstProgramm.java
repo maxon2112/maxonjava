@@ -1,3 +1,5 @@
+package tr.rtr;
+
 public class MyFirstProgramm {
 
   public static void main(String[] args){
