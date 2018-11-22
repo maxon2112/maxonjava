@@ -2,12 +2,9 @@ package tr.rtr;
 
 public class MyFirstProgramm {
     public static void main(String[ ] args) {
-        Point p1 = new Point();
-        Point p2 = new Point();
-        p1.x=7;
-        p2.x=6;
-        p1.y=7;
-        p2.y=16;
+        Point p1 = new Point(7,7);
+        Point p2 = new Point(6,16);
+        System.out.println(distance(p1,p2));
         System.out.println("Расстояние между двумя точками p1("+p1.x +","+ p1.y+") и p2("+p2.x +","+ p2.y+")="+distance(p1,p2));
 
     }
