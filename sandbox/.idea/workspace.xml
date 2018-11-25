@@ -619,7 +619,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543145153559" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543145301027" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -643,7 +643,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyFirstProgramm (1)">
+  <component name="RunManager" selected="TestNG.distanceTest">
     <configuration name="MyFirstProgramm" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFirstProgramm" />
       <module name="sandbox" />
@@ -721,8 +721,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyFirstProgramm (1)" />
         <item itemvalue="TestNG.distanceTest" />
+        <item itemvalue="Application.MyFirstProgramm (1)" />
         <item itemvalue="TestNG.squareTest" />
         <item itemvalue="TestNG.ru.stqa.pft.sandbox" />
       </list>
