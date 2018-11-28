@@ -28,12 +28,26 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="sandbox" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sandbox" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sandbox" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -48,7 +62,7 @@
         <counts>
           <entry key="project.closed" value="14" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="4" />
+          <entry key="project.open.time.18" value="5" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="2" />
@@ -58,7 +72,7 @@
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,13 +93,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="50" />
-          <entry key="java" value="2184" />
+          <entry key="java" value="2185" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="50" />
-          <entry key="JAVA" value="2184" />
+          <entry key="JAVA" value="2185" />
         </counts>
       </usages-collector>
     </session>
@@ -96,20 +110,14 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/GroupCreationTests.java">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/GroupCreation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            <state relative-caret-position="-697">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1362#1363#0" expanded="true" />
-                <element signature="e#1417#1418#0" expanded="true" />
-                <element signature="e#1457#1458#0" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#2237#2238#0" expanded="true" />
-                <element signature="e#2285#2286#0" expanded="true" />
-                <element signature="e#2332#2333#0" expanded="true" />
-                <element signature="e#2385#2386#0" expanded="true" />
+                <element signature="e#2196#2197#0" expanded="true" />
+                <element signature="e#2251#2252#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,7 +126,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com/example/tests/FullDateBirthday.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
+            <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
@@ -127,16 +135,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com/example/tests/NewUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="255">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1546#1547#0" expanded="true" />
-                <element signature="e#1601#1602#0" expanded="true" />
-                <element signature="e#1593#1594#0" expanded="true" />
-                <element signature="e#1651#1652#0" expanded="true" />
-                <element signature="e#4018#4019#0" expanded="true" />
-                <element signature="e#4074#4075#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -950,6 +952,7 @@
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com/example/tests/FullDateBirthday.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com/example/tests/NewUser.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/GroupCreationTests.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/GroupCreation.java" />
       </list>
     </option>
   </component>
@@ -959,10 +962,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="45" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="519" />
     <option name="y" value="120" />
-    <option name="width" value="1348" />
+    <option name="width" value="874" />
     <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -971,32 +974,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
-          <expand>
-            <path>
-              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="addressbook-web-tests" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="addressbook-web-tests" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="addressbook-web-tests_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="sandbox" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="sandbox" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="sandbox_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1046,10 +1023,36 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
+          <expand>
+            <path>
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="addressbook-web-tests" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="addressbook-web-tests" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="addressbook-web-tests_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="sandbox" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="sandbox" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="sandbox_main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543356861478" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543423557261" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" />
@@ -1080,7 +1083,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests (3)">
+  <component name="RunManager" selected="TestNG.GroupCreation">
     <configuration name="MyFirstProgramm" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFirstProgramm" />
       <module name="sandbox" />
@@ -1101,16 +1104,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreationTests (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests_main" />
+    <configuration name="GroupCreation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.main.adressbook.*" />
+          <option name="PATTERN" value="adressbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.main.adressbook" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.main.adressbook.GroupCreationTests" />
+      <option name="PACKAGE_NAME" value="adressbook" />
+      <option name="MAIN_CLASS_NAME" value="adressbook.GroupCreation" />
       <properties />
       <listeners />
       <method v="2">
@@ -1171,19 +1174,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.MyFirstProgramm" />
-      <item itemvalue="TestNG.GroupCreationTests (1)" />
       <item itemvalue="TestNG.GroupCreationTests (2)" />
       <item itemvalue="TestNG.GroupCreationTests (3)" />
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.NewUser" />
+      <item itemvalue="TestNG.GroupCreation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupCreation" />
         <item itemvalue="TestNG.GroupCreationTests (3)" />
         <item itemvalue="TestNG.NewUser" />
         <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.GroupCreationTests (2)" />
-        <item itemvalue="TestNG.GroupCreationTests (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1201,21 +1204,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NewUser - 2018.11.28 at 00h 40m 01s.xml">
-      <configuration name="NewUser" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="NewUser - 2018.11.28 at 00h 42m 38s.xml">
-      <configuration name="NewUser" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="NewUser - 2018.11.28 at 00h 44m 03s.xml">
-      <configuration name="NewUser" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="NewUser - 2018.11.28 at 00h 45m 54s.xml">
-      <configuration name="NewUser" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="NewUser - 2018.11.28 at 00h 47m 23s.xml">
-      <configuration name="NewUser" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="GroupCreationTests_(3) - 2018.11.28 at 00h 48m 36s.xml">
       <configuration name="GroupCreationTests (3)" configurationId="TestNG" />
     </history-entry>
@@ -1231,6 +1219,21 @@
     <history-entry file="GroupCreationTests_(3) - 2018.11.28 at 01h 10m 02s.xml">
       <configuration name="GroupCreationTests (3)" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="GroupCreationTests_(3) - 2018.11.28 at 19h 38m 06s.xml">
+      <configuration name="GroupCreationTests (3)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupCreation - 2018.11.28 at 19h 39m 53s.xml">
+      <configuration name="GroupCreation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupCreation - 2018.11.28 at 19h 41m 11s.xml">
+      <configuration name="GroupCreation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupCreation - 2018.11.28 at 19h 42m 19s.xml">
+      <configuration name="GroupCreation" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupCreation - 2018.11.28 at 19h 42m 46s.xml">
+      <configuration name="GroupCreation" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1242,10 +1245,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="120" width="1348" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.29736024" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.18532526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1254,7 +1257,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50163937" side_tool="true" weight="0.25416037" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36101082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3590164" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1263,7 +1266,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32851985" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015129" side_tool="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32786885" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49848714" weight="0.3267148" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49848714" weight="0.3262295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24927536" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1271,7 +1274,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" visible="true" weight="0.32919255" />
+      <window_info anchor="right" id="Gradle" order="7" weight="0.32919255" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32996893" />
     </layout>
     <layout-to-restore>
@@ -1378,6 +1381,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/GroupData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/GroupCreation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2196#2197#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com/example/tests/FullDateBirthday.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com/example/tests/NewUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1403,54 +1442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/GroupData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com/example/tests/FullDateBirthday.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com/example/tests/NewUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1593#1594#0" expanded="true" />
-            <element signature="e#1651#1652#0" expanded="true" />
-            <element signature="e#4018#4019#0" expanded="true" />
-            <element signature="e#4074#4075#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/GroupCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1417#1418#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#2237#2238#0" expanded="true" />
-            <element signature="e#2285#2286#0" expanded="true" />
-            <element signature="e#2332#2333#0" expanded="true" />
-            <element signature="e#2385#2386#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
