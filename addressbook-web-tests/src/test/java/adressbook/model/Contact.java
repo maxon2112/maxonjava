@@ -1,4 +1,4 @@
-package com.example.tests;
+package adressbook.model;
 
 public class Contact {
     private final String firstname;

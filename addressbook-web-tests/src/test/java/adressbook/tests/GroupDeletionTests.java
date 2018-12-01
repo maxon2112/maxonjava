@@ -1,6 +1,5 @@
-package DelGr;
+package adressbook.tests;
 
-import adressbook.TestBase;
 import org.testng.annotations.Test;
 
 public class GroupDeletionTests extends TestBase {
@@ -12,10 +11,10 @@ public class GroupDeletionTests extends TestBase {
 
   @Test
   public void testGroupDelection()  {
-    gotoGroupPage();
-    selectGroup();
-    deleteSelectedGroups();
-    returnToGroupPage();
+    app.gotoGroupPage();
+    app.selectGroup();
+    app.deleteSelectedGroups();
+    app.returnToGroupPage();
   }
 
 
