@@ -5,23 +5,27 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class AddNewHelper {
-    private FirefoxDriver wd;
+public class AddNewHelper extends HelperBase {
 
     public AddNewHelper(FirefoxDriver wd) {
-        this.wd = wd;
+        super(wd);
     }
-        public void gotoaddUser(){
-            wd.findElement(By.linkText("add new")).click();
+    public void submitGroupCreation() {
+        click(By.name("submit"));
+
+    }
+
+
+
+    public void gotoaddUser(){
+            click(By.name("add new"));
         }
 
         public void FillUserForm (Contact contact) {
-            wd.findElement(By.name("firstname")).click();
-            wd.findElement(By.name("firstname")).clear();
-            wd.findElement(By.name("firstname")).sendKeys(contact.getFirstname());
-            wd.findElement(By.name("lastname")).click();
-            wd.findElement(By.name("lastname")).clear();
-            wd.findElement(By.name("lastname")).sendKeys(contact.getLastname());
+            type(By.name("firstname"), contact.getFirstname());
+            type(By.name("lastname"), contact.getLastname());
+            type(By.name("firstname"), contact.getAddress());
+            type(By.name("firstname"), contact.getHome());
             wd.findElement(By.name("address")).click();
             wd.findElement(By.name("address")).clear();
             wd.findElement(By.name("address")).sendKeys(contact.getAddress());
