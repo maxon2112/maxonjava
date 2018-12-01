@@ -28,7 +28,7 @@ public class GroupCreation{
  
 
   private void login(String username, String password) {
-    
+
     wd.findElement(By.name("user")).click();
     wd.findElement(By.name("pass")).clear();
     wd.findElement(By.name("pass")).sendKeys("secret");

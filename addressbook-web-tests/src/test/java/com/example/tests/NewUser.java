@@ -19,7 +19,7 @@ public class NewUser {
   @BeforeMethod(alwaysRun = true)
   public void setUp() throws Exception {
     wb = new FirefoxDriver();
-    wb.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    wb.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
     wb.get("http://localhost/addressbook/");
     login("admin","secret");
   }
@@ -38,17 +38,7 @@ public class NewUser {
   public void testNewUser() {
 
     gotoaddUser();
-    WriteFirstName("Max");
-    WriteLastName("Nemchenko");
-    WriteAddress("Evropeyscii prosperct");
-    WriteHomeNumber("7");
-    WriteEmail("maxen_93@mail.ru");
-    WriteHomepage("https://vk.com");
-    SelectDateBirthday(new FullDateBirthday("1993", "21", "December"));
-    selectGroup("test1");
-    WriteAdress2("Saint Peterburg");
-    WriteNumber("8");
-    WriteNotes("87");
+    FillUserForm(new Contact("Max", "Nemchenko", "Evropeyscii prosperct", "7981689712", "maxen_93@mail.ru", "https://vk.com", "1993", "December", "21", "test1", "Saint Peterburg", "8", "mt"));
     returnToHomePage();
     logout();
   }
@@ -67,80 +57,58 @@ public class NewUser {
     wb.findElement(By.linkText("home page")).click();
   }
 
-  private void WriteNotes(String notes) {
-    wb.findElement(By.name("notes")).click();
-    wb.findElement(By.name("notes")).clear();
-    wb.findElement(By.name("notes")).sendKeys(notes);
-    wb.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]")).click();
-  }
-
-  private void WriteNumber(String phone2) {
-    wb.findElement(By.name("phone2")).click();
-    wb.findElement(By.name("phone2")).clear();
-    wb.findElement(By.name("phone2")).sendKeys(phone2);
-  }
-
-  private void WriteAdress2(String address2) {
-    wb.findElement(By.name("address2")).click();
-    wb.findElement(By.name("address2")).clear();
-    wb.findElement(By.name("address2")).sendKeys(address2);
-  }
-
-  private void selectGroup(String new_group) {
-    wb.findElement(By.name("new_group")).click();
-    new Select(wb.findElement(By.name("new_group"))).selectByVisibleText(new_group);
-    wb.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Group:'])[1]/following::option[2]")).click();
-  }
-
-
-  private void SelectDateBirthday(FullDateBirthday fullDateBirthday) {
-    wb.findElement(By.name("bday")).click();
-    new Select(wb.findElement(By.name("bday"))).selectByVisibleText(fullDateBirthday.getBday());
-    wb.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[23]")).click();
-    wb.findElement(By.name("bmonth")).click();
-    new Select(wb.findElement(By.name("bmonth"))).selectByVisibleText(fullDateBirthday.getBmonth());
-    wb.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[46]")).click();
-    wb.findElement(By.name("byear")).click();
-    wb.findElement(By.name("byear")).click();
-    wb.findElement(By.name("byear")).clear();
-    wb.findElement(By.name("byear")).sendKeys(fullDateBirthday.getByear());
-  }
-
-  private void WriteHomepage(String homepage) {
-    wb.findElement(By.name("homepage")).click();
-    wb.findElement(By.name("homepage")).sendKeys(homepage);
-  }
-
-  private void WriteEmail(String email) {
-    wb.findElement(By.name("email")).click();
-    wb.findElement(By.name("email")).clear();
-    wb.findElement(By.name("email")).sendKeys(email);
-  }
-
-  private void WriteHomeNumber(String home) {
-    wb.findElement(By.name("home")).click();
-    wb.findElement(By.name("home")).clear();
-    wb.findElement(By.name("home")).sendKeys(home);
-
-  }
-
-  private void WriteAddress(String address) {
-    wb.findElement(By.name("address")).click();
-    wb.findElement(By.name("address")).clear();
-    wb.findElement(By.name("address")).sendKeys(address);
-
-  }
-
-  private void WriteLastName(String lastname) {
-    wb.findElement(By.name("lastname")).click();
-    wb.findElement(By.name("lastname")).clear();
-    wb.findElement(By.name("lastname")).sendKeys(lastname);
-  }
-
-  private void WriteFirstName(String firstname) {
+  private void FillUserForm(Contact contact) {
     wb.findElement(By.name("firstname")).click();
     wb.findElement(By.name("firstname")).clear();
-    wb.findElement(By.name("firstname")).sendKeys(firstname);
+    wb.findElement(By.name("firstname")).sendKeys(contact.getFirstname());
+    wb.findElement(By.name("lastname")).click();
+    wb.findElement(By.name("lastname")).clear();
+    wb.findElement(By.name("lastname")).sendKeys(contact.getLastname());
+    wb.findElement(By.name("address")).click();
+    wb.findElement(By.name("address")).clear();
+    wb.findElement(By.name("address")).sendKeys(contact.getAddress());
+    wb.findElement(By.name("home")).click();
+    wb.findElement(By.name("home")).clear();
+    wb.findElement(By.name("home")).sendKeys(contact.getHome());
+    wb.findElement(By.name("email")).click();
+    wb.findElement(By.name("email")).clear();
+    wb.findElement(By.name("email")).sendKeys(contact.getEmail());
+    wb.findElement(By.name("homepage")).click();
+    wb.findElement(By.name("homepage")).sendKeys(contact.getHomepage());
+    wb.findElement(By.name("byear")).click();
+    wb.findElement(By.name("byear")).clear();
+    wb.findElement(By.name("byear")).sendKeys(contact.getByear());
+    wb.findElement(By.name("bday")).click();
+    wb.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[23]")).click();
+    new Select(wb.findElement(By.name("bday"))).selectByVisibleText(contact.getBday());
+    wb.findElement(By.name("bmonth")).click();
+    wb.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[46]")).click();
+    new Select(wb.findElement(By.name("bmonth"))).selectByVisibleText(contact.getBmonth());
+    wb.findElement(By.name("new_group")).click();
+    new Select(wb.findElement(By.name("new_group"))).selectByVisibleText(contact.getNew_group());
+    wb.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Group:'])[1]/following::option[2]")).click();
+    wb.findElement(By.name("address2")).click();
+    wb.findElement(By.name("address2")).clear();
+    wb.findElement(By.name("address2")).sendKeys(contact.getAddress2());
+    wb.findElement(By.name("phone2")).click();
+    wb.findElement(By.name("phone2")).clear();
+    wb.findElement(By.name("phone2")).sendKeys(contact.getPhone2());
+    wb.findElement(By.name("notes")).click();
+    wb.findElement(By.name("notes")).clear();
+    wb.findElement(By.name("notes")).sendKeys(contact.getNotes());
+    wb.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]")).click();
+
+
+
+
+
+
+
+
+
+
+
+
   }
 
   private void gotoaddUser() {
