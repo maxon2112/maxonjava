@@ -1,0 +1,19 @@
+package adressbook.tests;
+
+import org.testng.annotations.Test;
+
+public class  DeleteUser extends TestBase {
+
+
+    @Test
+    public void  DeleteUser() {
+
+
+        app.getAddNewHelper().ChoseDelete();
+        app.getAddNewHelper().Alert();
+
+    }
+
+
+}
+
