@@ -1,6 +1,5 @@
 package adressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 public class GroupDeletionTests extends TestBase {
@@ -15,7 +14,7 @@ public class GroupDeletionTests extends TestBase {
     app.getNavigationHelper().gotoGroupPage();
     app.getGroupHelper().selectGroup();
     app.getGroupHelper().deleteSelectedGroups();
-    app.getGroupHelper().returnToGroupPage(By.linkText("Logout"));
+    app.getGroupHelper().returnToGroupPage();
   }
 
 

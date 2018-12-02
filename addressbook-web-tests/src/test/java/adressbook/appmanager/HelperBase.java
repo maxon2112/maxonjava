@@ -12,25 +12,22 @@ public class HelperBase {
         this.wd=wd;
     }
 
-    protected void click(By locator) {
+    public void click(By locator) {
         wd.findElement(locator).click();
 
     }
 
-    protected void type(By locator, String text) {
+    public void type(By locator, String text) {
         click(locator);
         wd.findElement(locator).clear();
         wd.findElement(locator).sendKeys(text);
     }
 
-    protected void xpath (By locator,By loc,String text) {
-        click(locator);
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
-        wd.findElement(By.name("bmonth")).click();
-        wd.findElement(loc).click();
-        new Select (wd.findElement(locator).sendKeys(text)).selectByVisibleText(text));
+    public void xtype (By locator, String text) {
+        new Select(wd.findElement(locator)).selectByVisibleText(text);
+
     }
+
         public boolean isAlertPresent(){
             try {
                 wd.switchTo().alert();

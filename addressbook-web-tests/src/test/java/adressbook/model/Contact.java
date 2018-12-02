@@ -2,7 +2,7 @@ package adressbook.model;
 
 public class Contact {
     private final String firstname;
-    private static String lastname;
+    private final String lastname;
     private final String address;
     private final String home;
     private final String email;
@@ -35,8 +35,7 @@ public class Contact {
         return firstname;
     }
 
-    public static String getLastname() {
-        return lastname;
+    public String getLastname() { return lastname;
     }
 
     public String getAddress() {
