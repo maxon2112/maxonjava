@@ -9,8 +9,8 @@ public class  DeleteUser extends TestBase {
     public void  DeleteUser() {
 
 
-        app.getAddNewHelper().ChoseDelete();
-        app.getAddNewHelper().Alert();
+        app.getContactHelper().ChoseDelete();
+        app.getContactHelper().Alert();
 
     }
 
