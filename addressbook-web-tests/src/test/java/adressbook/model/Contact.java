@@ -10,7 +10,7 @@ public class Contact {
     private final String byear;
     private final String bmonth;
     private final String bday;
-    private final String new_group;
+    private String new_group;
     private final String address2;
     private final String phone2;
     private final String notes;
@@ -66,7 +66,7 @@ public class Contact {
         return bday;
     }
 
-    public String getNew_group() {
+    public String getGroup() {
         return new_group;
     }
 
@@ -81,4 +81,6 @@ public class Contact {
     public String getNotes() {
         return notes;
     }
+
+
 }
