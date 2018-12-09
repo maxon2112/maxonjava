@@ -30,11 +30,11 @@ public class HelperBase {
 
 
     public void xtype (By locator, String text) {
-       // if (isElementPresent(locator)) {
+
             new Select(wd.findElement(locator)).selectByVisibleText(text);
 
         }
-   // }
+
 
 
     public boolean isElementPresent(By locator){
