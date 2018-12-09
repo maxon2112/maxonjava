@@ -13,7 +13,8 @@ import org.testng.annotations.Test;
 
             app.getContactHelper().editUserPage();
             app.getContactHelper().FillUserForm(new Contact("Misha", "Prtrov", "Evropeyscii prosperct", "7988834849595", "maxen_93@mail.ru", "https://vk.com", "1986", "July", "12", null, "Moscow", "9", "mot"), false);
-            app.getContactHelper().returnToHomePage();
+            app.getNavigationHelper().returnToHomePage();
+            app.getNavigationHelper().goToHomePage();
 
         }
 

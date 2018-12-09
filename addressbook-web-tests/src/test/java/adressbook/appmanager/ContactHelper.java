@@ -36,11 +36,6 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]"));
     }
 
-    public void returnToHomePage() {
-        click(By.linkText("home page"));
-    }
-
-
 
     public void editUserPage() {
         click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
