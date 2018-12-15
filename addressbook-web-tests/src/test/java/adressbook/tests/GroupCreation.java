@@ -12,6 +12,7 @@ public class GroupCreation extends TestBase {
 
 
     app.getNavigationHelper().gotoGroupPage();
+    //List<GroupData> before=app.getGroupHelper().getGroupList();
     int before = app.getGroupHelper().getGroupCount();
     app.getGroupHelper().createGroup(new GroupData("test1", null, null));
     int after = app.getGroupHelper().getGroupCount();
