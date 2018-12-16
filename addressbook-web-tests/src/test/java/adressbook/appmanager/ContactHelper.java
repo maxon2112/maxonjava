@@ -74,6 +74,7 @@ public class ContactHelper extends HelperBase {
         returnToHomePage();
     }
 }
+
 //table[@id='maintable']/tbody/tr[8]/td[2]
 
 
