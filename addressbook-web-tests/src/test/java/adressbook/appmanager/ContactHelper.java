@@ -3,8 +3,12 @@ package adressbook.appmanager;
 import adressbook.model.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
     public ContactHelper(WebDriver wd) {
@@ -72,6 +76,20 @@ public class ContactHelper extends HelperBase {
         gotoaddUser();
         FillUserForm(contact,true);
         returnToHomePage();
+    }
+
+    public List<Contact> getContactList() {
+        List<Contact> contacts = new ArrayList<Contact>();
+        List<WebElement> elements = wd.findElements(By.cssSelector("td.center"));
+        for (WebElement element : elements) {
+            String firstname = element.getText();
+            String lastname= element.getText();
+          int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+
+            Contact contact = new Contact(id, firstname, lastname, null, null, null, null,null, null, null, null, null, null, null);
+            contacts.add(contact);
+        }
+        return contacts;
     }
 }
 
