@@ -55,6 +55,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void ChoseDelete() {
+        //wd.findElements(By.name("selected[]")).get(index).click();
         click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td/input"));
         click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Select all'])[1]/following::input[2]"));
 
@@ -66,6 +67,10 @@ public class ContactHelper extends HelperBase {
 
     public boolean editContact() {
         return isElementPresent(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+    }
+
+    public void selectContact(int index) {
+        wd.findElements(By.name("selected[]")).get(index).click();
     }
 
     public boolean deleteContact() {
@@ -80,13 +85,14 @@ public class ContactHelper extends HelperBase {
 
     public List<Contact> getContactList() {
         List<Contact> contacts = new ArrayList<Contact>();
-        List<WebElement> elements = wd.findElements(By.cssSelector("td.center"));
+        List<WebElement> elements = wd.findElements(By.cssSelector("tr[name=entry]"));
         for (WebElement element : elements) {
-            String firstname = element.getText();
-            String lastname= element.getText();
-          int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("id"));
+            List<WebElement> cells = element.findElements(By.cssSelector("td"));
+            String lastname = cells.get(1).getText();
+            String name = cells.get(2).getText();
 
-            Contact contact = new Contact(id, firstname, lastname, null, null, null, null,null, null, null, null, null, null, null);
+            Contact contact = new Contact(id, name, lastname, null, null, null, null,null, null, null, null, null, null, null);
             contacts.add(contact);
         }
         return contacts;
