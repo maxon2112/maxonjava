@@ -54,11 +54,8 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("add new"));
     }
 
-    public void ChoseDelete() {
-        //wd.findElements(By.name("selected[]")).get(index).click();
-        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td/input"));
-        click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Select all'])[1]/following::input[2]"));
-
+    public void DeleteCon() {
+        click(By.xpath("//input[@value='Delete']"));
     }
 
     public void Alert() {

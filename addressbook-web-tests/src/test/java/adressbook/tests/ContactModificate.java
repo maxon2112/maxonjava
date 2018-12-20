@@ -2,9 +2,13 @@ package adressbook.tests;
 
 
 import adressbook.model.Contact;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-    public class ContactModificate extends TestBase {
+import java.util.HashSet;
+import java.util.List;
+
+public class ContactModificate extends TestBase {
 
 
         @Test
@@ -17,16 +21,12 @@ import org.testng.annotations.Test;
                 app.getContactHelper().createContact(new Contact("Max", "Nemchenko", "Evropeyscii prosperct", "7981689712", "maxen_93@mail.ru", "https://vk.com", "1993", "December", "21", "test1", "Saint Peterburg", "8", "mt"));
 
             }
-            app.getContactHelper().editUserPage();
-            app.getContactHelper().FillUserForm(new Contact("Misha", "Prtrov", "Evropeyscii prosperct", "7988834849595", "maxen_93@mail.ru", "https://vk.com", "1986", "July", "12", null, "Moscow", "9", "mot"), false);
-            app.getContactHelper().returnToHomePage();
 
             List<Contact> before = app.getContactHelper().getContactList();
             app.getContactHelper().selectContact(before.size() - 1);
             app.getContactHelper().editUserPage ();
-            Contact contact = new Contact(before.get(before.size() - 1).getId(),"zloy","luk");
+            Contact contact = new Contact(before.get(before.size() - 1).getId(),"Misha", "Prtrov", "Evropeyscii prosperct", "7988834849595", "maxen_93@mail.ru", "https://vk.com", "1986", "July", "12", null, "Moscow", "9", "mot");
             app.getContactHelper().FillUserForm(contact,false);
-            app.getContactHelper().submitContactModification ();
             app.getContactHelper().returnToHomePage();
             List<Contact> after = app.getContactHelper().getContactList();
             Assert.assertEquals(after.size(), before.size());

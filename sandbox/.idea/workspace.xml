@@ -66,7 +66,7 @@
     <session id="-1908008856">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="27" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="5" />
           <entry key="project.open.time.19" value="1" />
@@ -99,7 +99,7 @@
           <entry key="gg" value="2" />
           <entry key="gradle" value="6" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="219" />
+          <entry key="java" value="235" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
@@ -107,7 +107,7 @@
         <counts>
           <entry key="CLASS" value="2" />
           <entry key="Groovy" value="6" />
-          <entry key="JAVA" value="221" />
+          <entry key="JAVA" value="237" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="2" />
         </counts>
@@ -117,14 +117,14 @@
           <entry key="asss" value="3" />
           <entry key="dummy" value="50" />
           <entry key="gradle" value="50" />
-          <entry key="java" value="8832" />
+          <entry key="java" value="8948" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="Groovy" value="50" />
-          <entry key="JAVA" value="8832" />
+          <entry key="JAVA" value="8948" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -136,19 +136,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/Contact.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,8 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+            <state relative-caret-position="259">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -177,7 +168,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/GroupData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-252">
               <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="33" />
               <folding>
                 <element signature="e#565#566#0" expanded="true" />
@@ -188,28 +179,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/GroupHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1153#1154#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ContactHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-434">
-              <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="28" />
+            <state relative-caret-position="140">
+              <caret line="73" column="41" lean-forward="true" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1856#1857#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
                 <element signature="e#2381#2382#0" expanded="true" />
                 <element signature="e#2454#2455#0" expanded="true" />
                 <element signature="e#2709#2718#0" expanded="true" />
@@ -221,17 +198,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactDelete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="191">
+              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupDeletionTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupModificationTests.java">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            <state relative-caret-position="116">
+              <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -239,11 +225,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/HelperBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactModificate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+            <state relative-caret-position="31">
+              <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -1030,14 +1028,11 @@
         <option value="$PROJECT_DIR$/src/test/java/tr/rtr/EquationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/rtr/Equation.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/SessionHelper.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ModificateNewUser.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/NewUser.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/DeleteUser.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/DeleteContact.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactDelete.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/tr/rtr/PrimeTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/tr/rtr/Primes.java" />
@@ -1048,9 +1043,12 @@
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/GroupData.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupCreation.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/Contact.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java" />
-        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ContactHelper.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactModificate.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactDelete.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ContactHelper.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ApplicationManager.java" />
       </list>
     </option>
   </component>
@@ -1060,7 +1058,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="29" />
     <option name="y" value="22" />
     <option name="width" value="547" />
@@ -1186,7 +1184,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545240884959" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545250924701" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" />
@@ -1196,8 +1194,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Documents\GitHub\maxonjava\addressbook-web-tests\src\test\java\com\newuser" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="adressbook.appmanager" />
+      <recent name="adressbook" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="tr.rtr" />
@@ -1205,9 +1204,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="adressbook" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="adressbook.appmanager" />
-      <recent name="adressbook" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\maxonjava\addressbook-web-tests\src\test\java\com\newuser" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1222,7 +1220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactCreate">
+  <component name="RunManager" selected="TestNG.ContactDelete">
     <configuration name="MyFirstProgramm" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFirstProgramm" />
       <module name="sandbox" />
@@ -1253,6 +1251,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="adressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="adressbook.tests.ContactCreate" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactDelete" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="adressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="adressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="adressbook.tests.ContactDelete" />
       <properties />
       <listeners />
       <method v="2">
@@ -1291,24 +1305,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreation.testGroupCreation" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="adressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="adressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="adressbook.tests.GroupCreation" />
-      <option name="METHOD_NAME" value="testGroupCreation" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GroupModificationTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests_test" />
       <extension name="coverage">
@@ -1340,17 +1336,17 @@
       <item itemvalue="Application.MyFirstProgramm" />
       <item itemvalue="TestNG.GroupCreation" />
       <item itemvalue="TestNG.GroupModificationTests" />
-      <item itemvalue="TestNG.GroupCreation.testGroupCreation" />
       <item itemvalue="TestNG.ContactModificate" />
       <item itemvalue="TestNG.ContactCreate" />
+      <item itemvalue="TestNG.ContactDelete" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactDelete" />
         <item itemvalue="TestNG.ContactCreate" />
-        <item itemvalue="TestNG.GroupModificationTests" />
-        <item itemvalue="TestNG.ContactModificate" />
         <item itemvalue="TestNG.GroupCreation" />
-        <item itemvalue="TestNG.GroupCreation.testGroupCreation" />
+        <item itemvalue="TestNG.ContactModificate" />
+        <item itemvalue="TestNG.GroupModificationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -1368,35 +1364,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactCreate - 2018.12.17 at 22h 24m 17s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 22h 59m 50s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.17 at 22h 25m 36s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 02m 42s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.17 at 22h 29m 30s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 03m 46s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.17 at 22h 36m 27s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 05m 22s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.17 at 22h 39m 28s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 14m 44s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.17 at 22h 41m 22s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 16m 43s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.17 at 22h 42m 24s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 17m 36s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.17 at 22h 46m 30s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 18m 02s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.19 at 19h 55m 24s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 20m 00s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactCreate - 2018.12.19 at 19h 57m 55s.xml">
-      <configuration name="ContactCreate" configurationId="TestNG" />
+    <history-entry file="ContactDelete - 2018.12.19 at 23h 21m 39s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1410,7 +1406,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.31770045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1421,7 +1416,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50163937" side_tool="true" weight="0.25416037" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32851985" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3590164" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3590164" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1683,16 +1678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1711,15 +1696,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5877#5878#0" expanded="true" />
+            <element signature="e#5913#5914#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1731,67 +1710,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/SuiteRunnerWorker.java">
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupModificationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupDeletionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="211">
+          <caret line="22" column="76" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/SuiteRunnerWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#2672#2673#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/GroupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        <state relative-caret-position="114">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1070#1071#0" expanded="true" />
             <element signature="e#1108#1109#0" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
             <element signature="e#1193#1194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ContactHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-434">
-          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2381#2382#0" expanded="true" />
-            <element signature="e#2454#2455#0" expanded="true" />
-            <element signature="e#2709#2718#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-614">
           <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/GroupData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-252">
           <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="33" />
           <folding>
             <element signature="e#565#566#0" expanded="true" />
@@ -1807,34 +1771,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupModificationTests.java">
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/HelperBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        <state relative-caret-position="332">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java">
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ContactHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="140">
+          <caret line="73" column="41" lean-forward="true" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1856#1857#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="e#2709#2718#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactDelete.java">
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="259">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactModificate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state relative-caret-position="31">
+          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
