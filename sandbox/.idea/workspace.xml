@@ -119,14 +119,14 @@
           <entry key="asss" value="3" />
           <entry key="dummy" value="50" />
           <entry key="gradle" value="50" />
-          <entry key="java" value="8975" />
+          <entry key="java" value="8976" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="Groovy" value="50" />
-          <entry key="JAVA" value="8975" />
+          <entry key="JAVA" value="8976" />
           <entry key="PLAIN_TEXT" value="50" />
         </counts>
       </usages-collector>
@@ -137,7 +137,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupCreation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -168,11 +168,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/Contact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+            <state relative-caret-position="114">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -236,7 +236,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactModificate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="309">
               <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
             </state>
           </provider>
@@ -1054,7 +1054,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="29" />
     <option name="y" value="22" />
     <option name="width" value="547" />
@@ -1180,7 +1180,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545405392103" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545405857324" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/com" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" />
@@ -1216,7 +1216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactModificate">
+  <component name="RunManager" selected="TestNG.GroupModificationTests">
     <configuration name="MyFirstProgramm" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFirstProgramm" />
       <module name="sandbox" />
@@ -1247,22 +1247,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="adressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="adressbook.tests.ContactCreate" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactDelete" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="adressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="adressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="adressbook.tests.ContactDelete" />
       <properties />
       <listeners />
       <method v="2">
@@ -1301,6 +1285,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GroupDeletionTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="adressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="adressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="adressbook.tests.GroupDeletionTests" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupModificationTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests_test" />
       <extension name="coverage">
@@ -1331,18 +1331,18 @@
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="Application.MyFirstProgramm" />
       <item itemvalue="TestNG.GroupCreation" />
-      <item itemvalue="TestNG.GroupModificationTests" />
       <item itemvalue="TestNG.ContactModificate" />
       <item itemvalue="TestNG.ContactCreate" />
-      <item itemvalue="TestNG.ContactDelete" />
+      <item itemvalue="TestNG.GroupDeletionTests" />
+      <item itemvalue="TestNG.GroupModificationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupModificationTests" />
+        <item itemvalue="TestNG.GroupDeletionTests" />
+        <item itemvalue="TestNG.GroupCreation" />
         <item itemvalue="TestNG.ContactModificate" />
         <item itemvalue="TestNG.ContactCreate" />
-        <item itemvalue="TestNG.ContactDelete" />
-        <item itemvalue="TestNG.GroupCreation" />
-        <item itemvalue="TestNG.GroupModificationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -1360,35 +1360,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactDelete - 2018.12.19 at 22h 59m 50s.xml">
+    <history-entry file="ContactDelete - 2018.12.21 at 18h 15m 16s.xml">
       <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 02m 42s.xml">
+    <history-entry file="ContactCreate - 2018.12.21 at 18h 16m 03s.xml">
+      <configuration name="ContactCreate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactModificate - 2018.12.21 at 18h 16m 31s.xml">
+      <configuration name="ContactModificate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactDelete - 2018.12.21 at 18h 20m 26s.xml">
       <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 03m 46s.xml">
+    <history-entry file="ContactDelete - 2018.12.21 at 18h 20m 57s.xml">
       <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 05m 22s.xml">
+    <history-entry file="ContactCreate - 2018.12.21 at 18h 21m 29s.xml">
+      <configuration name="ContactCreate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactDelete - 2018.12.21 at 18h 22m 13s.xml">
       <configuration name="ContactDelete" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 14m 44s.xml">
-      <configuration name="ContactDelete" configurationId="TestNG" />
+    <history-entry file="ContactCreate - 2018.12.21 at 18h 22m 42s.xml">
+      <configuration name="ContactCreate" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 16m 43s.xml">
-      <configuration name="ContactDelete" configurationId="TestNG" />
+    <history-entry file="ContactModificate - 2018.12.21 at 18h 23m 07s.xml">
+      <configuration name="ContactModificate" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 17m 36s.xml">
-      <configuration name="ContactDelete" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 18m 02s.xml">
-      <configuration name="ContactDelete" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 20m 00s.xml">
-      <configuration name="ContactDelete" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactDelete - 2018.12.19 at 23h 21m 39s.xml">
-      <configuration name="ContactDelete" configurationId="TestNG" />
+    <history-entry file="GroupCreation - 2018.12.21 at 18h 23m 55s.xml">
+      <configuration name="GroupCreation" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1736,27 +1736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupCreation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactDelete.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1774,13 +1753,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactModificate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -1816,8 +1788,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        <state relative-caret-position="114">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactModificate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupCreation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
         </state>
       </provider>
     </entry>
