@@ -10,7 +10,7 @@ import java.util.List;
 public class ContactCreate extends TestBase {
 
 
-  @Test
+  @Test(enabled = false)
   public void testNewUser() {
 
 
