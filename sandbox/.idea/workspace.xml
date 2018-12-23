@@ -103,7 +103,11 @@
           <entry key="gradle" value="6" />
           <entry key="gradlew" value="1" />
 <<<<<<< HEAD
+<<<<<<< HEAD
           <entry key="java" value="254" />
+=======
+          <entry key="java" value="236" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
 =======
           <entry key="java" value="236" />
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
@@ -115,7 +119,11 @@
           <entry key="CLASS" value="2" />
           <entry key="Groovy" value="6" />
 <<<<<<< HEAD
+<<<<<<< HEAD
           <entry key="JAVA" value="256" />
+=======
+          <entry key="JAVA" value="238" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
 =======
           <entry key="JAVA" value="238" />
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
@@ -129,7 +137,11 @@
           <entry key="dummy" value="50" />
           <entry key="gradle" value="50" />
 <<<<<<< HEAD
+<<<<<<< HEAD
           <entry key="java" value="9292" />
+=======
+          <entry key="java" value="8976" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
 =======
           <entry key="java" value="8976" />
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
@@ -140,7 +152,11 @@
           <entry key="CLASS" value="3" />
           <entry key="Groovy" value="50" />
 <<<<<<< HEAD
+<<<<<<< HEAD
           <entry key="JAVA" value="9292" />
+=======
+          <entry key="JAVA" value="8976" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
 =======
           <entry key="JAVA" value="8976" />
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
@@ -154,6 +170,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ApplicationManager.java">
@@ -180,11 +197,16 @@
                 <element signature="e#2081#2082#0" expanded="true" />
               </folding>
 =======
+=======
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupCreation.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+<<<<<<< HEAD
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
+=======
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
             </state>
           </provider>
@@ -215,8 +237,13 @@
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/GroupHelper.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="187">
               <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+=======
+            <state relative-caret-position="114">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
 =======
             <state relative-caret-position="114">
               <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
@@ -266,9 +293,25 @@
       </file>
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactModificate.java">
 =======
         <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java">
+=======
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/HelperBase.java">
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
@@ -1106,6 +1149,9 @@
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/GroupData.java" />
+<<<<<<< HEAD
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
+=======
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ContactHelper.java" />
         <option value="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/Contact.java" />
@@ -1245,9 +1291,12 @@
   </component>
   <component name="PropertiesComponent">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545574375053" />
     <property name="extract.method.default.visibility" value="public" />
 =======
+=======
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545405857324" />
     <property name="extract.method.default.visibility" value="private" />
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
@@ -1286,7 +1335,11 @@
     </option>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="RunManager" selected="TestNG.adressbook.tests">
+=======
+  <component name="RunManager" selected="TestNG.GroupModificationTests">
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
 =======
   <component name="RunManager" selected="TestNG.GroupModificationTests">
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
@@ -1408,6 +1461,7 @@
       <item itemvalue="TestNG.ContactCreate" />
       <item itemvalue="TestNG.GroupModificationTests" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <item itemvalue="TestNG.ContactDelete" />
       <item itemvalue="TestNG.ContactModificate" />
       <item itemvalue="TestNG.adressbook.tests" />
@@ -1418,6 +1472,11 @@
         <item itemvalue="TestNG.ContactCreate" />
         <item itemvalue="TestNG.ContactDelete" />
         <item itemvalue="TestNG.ContactModificate" />
+=======
+    </list>
+    <recent_temporary>
+      <list>
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
         <item itemvalue="TestNG.GroupModificationTests" />
 =======
     </list>
@@ -1428,6 +1487,9 @@
         <item itemvalue="TestNG.GroupCreation" />
         <item itemvalue="TestNG.ContactModificate" />
         <item itemvalue="TestNG.ContactCreate" />
+<<<<<<< HEAD
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
+=======
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
       </list>
     </recent_temporary>
@@ -1446,6 +1508,7 @@
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <history-entry file="ContactDelete - 2018.12.21 at 18h 42m 05s.xml">
       <configuration name="ContactDelete" configurationId="TestNG" />
@@ -1491,6 +1554,37 @@
     </history-entry>
     <history-entry file="ContactDelete - 2018.12.21 at 18h 20m 57s.xml">
       <configuration name="ContactDelete" configurationId="TestNG" />
+=======
+    <history-entry file="ContactDelete - 2018.12.21 at 18h 15m 16s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactCreate - 2018.12.21 at 18h 16m 03s.xml">
+      <configuration name="ContactCreate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactModificate - 2018.12.21 at 18h 16m 31s.xml">
+      <configuration name="ContactModificate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactDelete - 2018.12.21 at 18h 20m 26s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactDelete - 2018.12.21 at 18h 20m 57s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactCreate - 2018.12.21 at 18h 21m 29s.xml">
+      <configuration name="ContactCreate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactDelete - 2018.12.21 at 18h 22m 13s.xml">
+      <configuration name="ContactDelete" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactCreate - 2018.12.21 at 18h 22m 42s.xml">
+      <configuration name="ContactCreate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactModificate - 2018.12.21 at 18h 23m 07s.xml">
+      <configuration name="ContactModificate" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="GroupCreation - 2018.12.21 at 18h 23m 55s.xml">
+      <configuration name="GroupCreation" configurationId="TestNG" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
     </history-entry>
     <history-entry file="ContactCreate - 2018.12.21 at 18h 21m 29s.xml">
       <configuration name="ContactCreate" configurationId="TestNG" />
@@ -1520,10 +1614,16 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.25189108" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.32753405" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
 =======
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
@@ -1824,6 +1924,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1859,6 +1969,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupDeletionTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1879,11 +1990,33 @@
           <folding>
             <element signature="e#565#566#0" expanded="true" />
             <element signature="e#622#623#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/GroupData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ContactHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-274">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1856#1857#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
           </folding>
 >>>>>>> parent of f1842da... ЗАДАНИЕ 9
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/appmanager/ContactHelper.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1920,6 +2053,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+=======
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/model/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
         </state>
       </provider>
     </entry>
@@ -1935,6 +2088,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/ContactCreate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1967,6 +2121,12 @@
             <element signature="e#2019#2020#0" expanded="true" />
             <element signature="e#2081#2082#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupCreation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+>>>>>>> parent of f1842da... ЗАДАНИЕ 9
 =======
     <entry file="file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/adressbook/tests/GroupCreation.java">
       <provider selected="true" editor-type-id="text-editor">
