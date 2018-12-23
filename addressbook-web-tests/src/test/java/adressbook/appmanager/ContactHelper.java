@@ -41,8 +41,8 @@ public class ContactHelper extends HelperBase {
     }
 
 
-    public void editUserPage() {
-        click(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+    public void editUserPage(int index) {
+        wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
     }
 
     public void returnToHomePage() {
@@ -63,7 +63,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public boolean editContact() {
-        return isElementPresent(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
+        return isElementPresent(By.name("selected[]"));
     }
 
     public void selectContact(int index) {
@@ -71,28 +71,16 @@ public class ContactHelper extends HelperBase {
     }
 
     public boolean deleteContact() {
-        return isElementPresent(By.xpath("//table[@id='maintable']/tbody/tr[2]/td/input"));
+        return isElementPresent(By.name("selected[]"));
     }
 
-    public void create(Contact contact) {
+    public void createContact(Contact contact) {
         gotoaddUser();
         FillUserForm(contact,true);
         returnToHomePage();
     }
-    public void modify(int index, Contact contact) {
-        selectContact(index);
-        editUserPage ();
-        FillUserForm(contact,false);
-        returnToHomePage();
-    }
-    public void delete(int index) {
-        selectContact(index);
-       DeleteCon();
-        Alert();
-       returnToHomePage();
-    }
 
-    public List<Contact> list() {
+    public List<Contact> getContactList() {
         List<Contact> contacts = new ArrayList<Contact>();
         List<WebElement> elements = wd.findElements(By.cssSelector("tr[name=entry]"));
         for (WebElement element : elements) {
