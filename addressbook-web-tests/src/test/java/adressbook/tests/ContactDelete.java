@@ -9,7 +9,11 @@ import java.util.List;
 public class ContactDelete extends TestBase {
 
 
+<<<<<<< HEAD
     @Test
+=======
+   @Test(enabled = false)
+>>>>>>> parent of 60a2d43... лекция 5.3
     public void  DeleteUser() {
 
         if (! app.getContactHelper().deleteContact()){
