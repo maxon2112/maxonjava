@@ -63,7 +63,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public boolean editContact() {
-        return isElementPresent(By.name("selected[]"));
+        return isElementPresent(By.xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img"));
     }
 
     public void selectContact(int index) {
@@ -71,7 +71,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public boolean deleteContact() {
-        return isElementPresent(By.name("selected[]"));
+        return isElementPresent(By.xpath("//table[@id='maintable']/tbody/tr[2]/td/input"));
     }
 
     public void create(Contact contact) {

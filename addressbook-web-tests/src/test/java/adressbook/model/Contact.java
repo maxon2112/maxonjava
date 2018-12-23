@@ -36,7 +36,7 @@ public class Contact {
         this.notes = notes;
     }
     public Contact(String firstname, String lastname, String address, String home, String email, String homepage, String byear, String bmonth, String bday, String new_group, String address2, String phone2, String notes) {
-        this.id=Integer.MAX_VALUE;
+        this.id=0;
         this.firstname = firstname;
         this.lastname = lastname;
         this.address = address;
