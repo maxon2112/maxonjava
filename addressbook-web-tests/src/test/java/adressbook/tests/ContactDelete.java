@@ -1,11 +1,13 @@
 package adressbook.tests;
 
 import adressbook.model.Contact;
-import org.testng.Assert;
+import adressbook.model.Contacts;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.List;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class ContactDelete extends TestBase {
 
@@ -13,20 +15,20 @@ public class ContactDelete extends TestBase {
     public void ensurePreconditons() {
         if (!app.contactt().editContact()) {
 
-            app.contactt().create(new Contact("Max", "Nemchenko", "Evropeyscii prosperct", "7981689712", "maxen_93@mail.ru", "https://vk.com", "1993", "December", "21", "test1", "Saint Peterburg", "8", "mt"));
+            app.contactt().create(new Contact().withFirstname("max").withLastname("Nemchenko").withAdress("Evropeyscii prosperct").withHome("7981689712").withEmail("maxen_93@mail.ru").
+                    withEmail("https://vk.com").withByear("1993").withBmonth("December").withBday("21").withGroup("test1").withAddress2("Saint Peterburg").withPhone2("8").withNotes("mt"));
 
         }
     }
 
-   @Test
-    public void  DeleteUser() {
-        List<Contact> before = app.contactt().list();
-       int index = before.size()-1;
-       app.contactt().delete(index);
-       List<Contact> after = app.contactt().list();
-        Assert.assertEquals(after.size(), before.size() - 1);
-        before.remove(index);
-        Assert.assertEquals(before, after);
+    @Test
+    public void DeleteUser() {
+        Contacts before = app.contactt().all();
+        Contact deleteContact = before.iterator().next();
+        app.contactt().delete(deleteContact);
+        Contacts after = app.contactt().all();
+        assertEquals(after.size(), before.size() - 1);
+        assertThat(after, equalTo(before.without(deleteContact)));
 
     }
 
