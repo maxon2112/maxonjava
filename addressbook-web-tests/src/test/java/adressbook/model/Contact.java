@@ -8,12 +8,11 @@ public class Contact {
     }
 
 
-
-
     public Contact withId(int id) {
         this.id = id;
         return this;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -35,9 +34,6 @@ public class Contact {
     }
 
 
-
-
-
     @Override
     public String toString() {
         return "Contact{" +
@@ -51,7 +47,8 @@ public class Contact {
         return firstname;
     }
 
-    public String getLastname() { return lastname;
+    public String getLastname() {
+        return lastname;
     }
 
     public String getAddress() {
@@ -102,8 +99,14 @@ public class Contact {
         return id;
     }
 
+    public String getMobilePhone() {
+        return mobile;
+    }
 
 
+    public String getWorkPhone() {
+        return work;
+    }
 
 
     public Contact withFirstname(String firstname) {
@@ -121,51 +124,71 @@ public class Contact {
         this.address = address;
         return this;
     }
+
     public Contact withHome(String home) {
         this.home = home;
         return this;
-
     }
+
+    public Contact WithMobilePhone(String mobile) {
+     this.mobile = mobile;
+     return this;
+    }
+    public Contact WithWorkPhone(String work) {
+     this.work = work;
+    return this;
+    }
+
+
     public Contact withEmail(String email) {
         this.email = email;
         return this;
     }
-        public Contact withHomepage(String homepage) {
-            this.homepage = homepage;
-            return this;
-        }
+
+    public Contact withHomepage(String homepage) {
+        this.homepage = homepage;
+        return this;
+    }
+
     public Contact withByear(String byear) {
         this.byear = byear;
         return this;
     }
+
     public Contact withBmonth(String bmonth) {
-        this.bmonth =bmonth;
+        this.bmonth = bmonth;
         return this;
     }
 
     public Contact withBday(String bday) {
-        this.bday =bday;
+        this.bday = bday;
         return this;
     }
 
-    public Contact withGroup(String  new_group) {
+    public Contact withGroup(String new_group) {
         this.new_group = new_group;
         return this;
     }
-    public Contact withAddress2(String  address2) {
+
+    public Contact withAddress2(String address2) {
         this.address2 = address2;
         return this;
     }
+
     public Contact withPhone2(String phone2) {
         this.phone2 = phone2;
         return this;
 
     }
+
     public Contact withNotes(String notes) {
         this.notes = notes;
         return this;
     }
-    private int id=Integer.MAX_VALUE;;
+
+
+    private int id = Integer.MAX_VALUE;
+
     private String firstname;
     private String lastname;
     private String address;
@@ -179,7 +202,10 @@ public class Contact {
     private String address2;
     private String phone2;
     private String notes;
+    private String mobile;
+    private String work;
 
 
 
 }
+
