@@ -95,6 +95,20 @@ public class Contact {
         return notes;
     }
 
+
+    public String getEmail2() {
+        return email2;
+    }
+    public String getEmail3() {
+        return email3;
+    }
+    public String getAllPhones() {
+        return allPhones;
+    }
+    public String getAllEmails() {
+        return allEmails;
+    }
+
     public int getId() {
         return id;
     }
@@ -140,10 +154,7 @@ public class Contact {
     }
 
 
-    public Contact withEmail(String email) {
-        this.email = email;
-        return this;
-    }
+
 
     public Contact withHomepage(String homepage) {
         this.homepage = homepage;
@@ -186,6 +197,27 @@ public class Contact {
         return this;
     }
 
+        public Contact withEmail2(String email2) {
+            this.email2 = email2;
+            return this;
+        }
+
+        public Contact withEmail3(String email3) {
+            this.email3 = email3;
+            return this;
+        }
+
+        public Contact withEmail(String email) {
+            this.email = email; return this;
+        }
+        public Contact withAllPhones(String allPhones) {
+            this.allPhones = allPhones; return this;
+        }
+        public Contact withAllEmails(String allEmails) {
+            this.allEmails = allEmails; return this;
+        }
+
+
 
     private int id = Integer.MAX_VALUE;
 
@@ -204,6 +236,10 @@ public class Contact {
     private String notes;
     private String mobile;
     private String work;
+    private String email2;
+    private String email3;
+    private String allPhones;
+    private String allEmails;
 
 
 
