@@ -2,6 +2,8 @@ package adressbook.tests;
 
 import adressbook.model.GroupData;
 import adressbook.model.Groups;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -9,6 +11,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -16,19 +19,20 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class GroupCreation extends TestBase {
 
 @DataProvider
-public Iterator<Object[]> validGroups() throws IOException {
-  List<Object[]> list = new ArrayList<Object[]>();
-  BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/java/resources/groups.csv")));
+public Iterator<Object[]> validGroupsJson() throws IOException {
+  BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/java/resources/groups.json")));
+  String json = "" ;
   String line = reader.readLine();
-  while  (line !=null) {
-    String[] split = line.split(";");
-    list.add(new Object[]{new GroupData().withName(split[0]).withHeader(split[1]).withFooter(split[2])});
+  while (line!=null) {
+    json += line;
     line = reader.readLine();
   }
-  return list.iterator();
+    Gson gson = new Gson();
+  List<GroupData> groups=gson.fromJson(json, new TypeToken<List<GroupData>>(){}.getType());
+  return groups.stream().map((g)->new Object[] {g}).collect(Collectors.toList()).iterator();
 }
 
-  @Test(dataProvider = "validGroups")
+  @Test(dataProvider = "validGroupsJson")
   public void testGroupCreation(GroupData group) {
     app.goTo().groupPage();
     Groups before=app.group().all();
@@ -44,7 +48,7 @@ public Iterator<Object[]> validGroups() throws IOException {
 
     app.goTo().groupPage();
     Groups before=app.group().all();
-    GroupData group = new GroupData().withName("test'");
+    GroupData group = new GroupData().withName("test!");
     app.group().create(group);
     assertThat(app.group().count(), equalTo(before.size()));
     Groups after=app.group().all();

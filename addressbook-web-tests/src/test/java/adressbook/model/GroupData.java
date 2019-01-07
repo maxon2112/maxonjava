@@ -1,5 +1,7 @@
 package adressbook.model;
 
+import com.google.gson.annotations.Expose;
+
 public class GroupData {
     public GroupData withId(int id) {
         this.id = id;
@@ -21,9 +23,11 @@ public class GroupData {
         this.footer = footer;
         return this;
     }
-
+    @Expose
     private String name;
+    @Expose
     private  String header;
+    @Expose
     private String footer;
     private int id=Integer.MAX_VALUE;
 

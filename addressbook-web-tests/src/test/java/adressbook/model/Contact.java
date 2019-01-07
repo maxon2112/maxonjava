@@ -1,5 +1,7 @@
 package adressbook.model;
 
+import com.google.gson.annotations.Expose;
+
 import java.io.File;
 
 public class Contact {
@@ -223,18 +225,31 @@ public class Contact {
 
     private int id = Integer.MAX_VALUE;
 
+    @Expose
     private String firstname;
+    @Expose
     private String lastname;
+    @Expose
     private String address;
+    @Expose
     private String home;
+    @Expose
     private String email;
+    @Expose
     private String homepage;
+    @Expose
     private String byear;
+    @Expose
     private String bmonth;
+    @Expose
     private String bday;
+    @Expose
     private String new_group;
+    @Expose
     private String address2;
+    @Expose
     private String phone2;
+    @Expose
     private String notes;
     private String mobile;
     private String work;
