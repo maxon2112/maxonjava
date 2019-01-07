@@ -18,7 +18,7 @@ public class GroupCreation extends TestBase {
 @DataProvider
 public Iterator<Object[]> validGroups() throws IOException {
   List<Object[]> list = new ArrayList<Object[]>();
-  BufferedReader reader = new BufferedReader((new FileReader(new File("src/test/java/resourses/groups.csv"))));
+  BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/java/resources/groups.csv")));
   String line = reader.readLine();
   while  (line !=null) {
     String[] split = line.split(";");
