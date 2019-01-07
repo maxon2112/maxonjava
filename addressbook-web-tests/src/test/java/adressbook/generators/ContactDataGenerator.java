@@ -69,6 +69,7 @@ public class ContactDataGenerator {
     private List<Contact> generateContact(int count) {
         List<Contact> contacts = new ArrayList<Contact>();
         for (int i = 0; i < count; i++) {
+
             contacts.add(new Contact().withFirstname("Max").withLastname("Nemchenko").withAdress("Evropeyscii prosperct" +" "+ i).withHome("798168971"+i).withEmail("maxen_9"+i+"@mail.ru").
                     withHomepage("https://vk"+i+".com").withByear("199"+i).withBmonth("December").withBday("2"+i).withGroup("test1").withAddress2("Saint Peterburg").withPhone2(""+i).withNotes("mt"+i));
         }

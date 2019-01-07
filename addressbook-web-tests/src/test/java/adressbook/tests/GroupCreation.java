@@ -42,7 +42,7 @@ public Iterator<Object[]> validGroupsJson() throws IOException {
     assertThat(after, equalTo(before.withAdded(group.withId(after.stream().mapToInt((g)->g.getId()).max().getAsInt()))));
   }
 
-  @Test
+  @Test (enabled = false)
   public void testBadGroupCreation() throws Exception  {
 
 

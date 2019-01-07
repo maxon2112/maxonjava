@@ -230,6 +230,8 @@ public class Contact {
     @Expose
     private String lastname;
     @Expose
+    private File photo;
+    @Expose
     private String address;
     @Expose
     private String home;
@@ -257,7 +259,7 @@ public class Contact {
     private String email3;
     private String allPhones;
     private String allEmails;
-    private File photo;
+
 
     public File getPhoto() {
         return photo;
