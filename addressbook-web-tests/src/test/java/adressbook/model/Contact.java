@@ -1,5 +1,7 @@
 package adressbook.model;
 
+import java.io.File;
+
 public class Contact {
 
 
@@ -240,6 +242,17 @@ public class Contact {
     private String email3;
     private String allPhones;
     private String allEmails;
+    private File photo;
+
+    public File getPhoto() {
+        return photo;
+    }
+
+    public Contact withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
 
 
 
