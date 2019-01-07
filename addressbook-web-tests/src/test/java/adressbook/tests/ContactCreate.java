@@ -23,7 +23,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class ContactCreate extends TestBase {
 
   @DataProvider
-  public Iterator<Object[]> validGroupsJson() throws IOException {
+  public Iterator<Object[]> validContactsJson() throws IOException {
     BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/java/resources/contacts.json")));
     String json = "";
     String line = reader.readLine();
@@ -37,7 +37,7 @@ public class ContactCreate extends TestBase {
     return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
   }
 
-  @Test(dataProvider = "validGroupsJson")
+  @Test(dataProvider = "validContactsJson")
   public void testNewUser(Contact contacttt) {
     Contacts before = app.contactt().all();
     app.contactt().create(contacttt);
