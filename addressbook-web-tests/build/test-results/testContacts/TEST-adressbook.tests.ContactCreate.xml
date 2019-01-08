@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="adressbook.tests.ContactCreate" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-01-08T11:30:57" hostname="LAPTOP-4THFCTEK" time="73.95">
+  <properties/>
+  <testcase name="testNewUser[0](Contact{id=2147483647, firstname='Max', lastname='Nemchenko'})" classname="adressbook.tests.ContactCreate" time="13.832"/>
+  <testcase name="testNewUser[1](Contact{id=2147483647, firstname='Max', lastname='Nemchenko'})" classname="adressbook.tests.ContactCreate" time="13.212"/>
+  <testcase name="testNewUser[2](Contact{id=2147483647, firstname='Max', lastname='Nemchenko'})" classname="adressbook.tests.ContactCreate" time="14.277"/>
+  <testcase name="testNewUser[3](Contact{id=2147483647, firstname='Max', lastname='Nemchenko'})" classname="adressbook.tests.ContactCreate" time="15.282"/>
+  <testcase name="testNewUserWithPhoto" classname="adressbook.tests.ContactCreate" time="17.344"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:750:13
+
+]]></system-err>
+</testsuite>

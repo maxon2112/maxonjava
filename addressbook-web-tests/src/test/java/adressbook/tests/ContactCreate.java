@@ -24,7 +24,7 @@ public class ContactCreate extends TestBase {
 
   @DataProvider
   public Iterator<Object[]> validContactsJson() throws IOException {
-    BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/java/resources/contacts.json")));
+   try( BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/java/resources/contacts.json")))){
     String json = "";
     String line = reader.readLine();
     while (line != null) {
@@ -36,7 +36,7 @@ public class ContactCreate extends TestBase {
     }.getType());
     return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
   }
-
+        }
   @Test(dataProvider = "validContactsJson")
   public void testNewUser(Contact contacttt) {
     Contacts before = app.contactt().all();
