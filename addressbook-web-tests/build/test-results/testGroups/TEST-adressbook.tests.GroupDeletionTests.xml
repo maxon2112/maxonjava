@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="adressbook.tests.GroupDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-08T11:34:28" hostname="LAPTOP-4THFCTEK" time="5.326">
+<testsuite name="adressbook.tests.GroupDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-08T13:00:47" hostname="LAPTOP-4THFCTEK" time="5.418">
   <properties/>
-  <testcase name="testGroupDelection" classname="adressbook.tests.GroupDeletionTests" time="5.326"/>
+  <testcase name="testGroupDelection" classname="adressbook.tests.GroupDeletionTests" time="5.418"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
