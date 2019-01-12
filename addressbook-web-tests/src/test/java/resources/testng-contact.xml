@@ -5,7 +5,7 @@
 
     <test name="Contacts">
         <classes>
-            <class name="adressbook.tests.ContactCreate" />
+            <class name="ru.stqa.pft.adressbook.tests.ContactCreate" />
 
         </classes>
     </test>
