@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Objects;
 
 @XStreamAlias("group")
 @Entity
@@ -82,22 +83,20 @@ public class GroupData {
                 ", name='" + name + '\'' +
                 '}';
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         GroupData groupData = (GroupData) o;
-
-        if (id != groupData.id) return false;
-        return name != null ? name.equals(groupData.name) : groupData.name == null;
+        return id == groupData.id &&
+                Objects.equals(name, groupData.name) &&
+                Objects.equals(header, groupData.header) &&
+                Objects.equals(footer, groupData.footer);
     }
 
     @Override
     public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + id;
-        return result;
+        return Objects.hash(id, name, header, footer);
     }
-
 }

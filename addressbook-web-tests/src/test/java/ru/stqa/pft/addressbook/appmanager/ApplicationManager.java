@@ -21,6 +21,7 @@ public class ApplicationManager {
     private GroupHelper groupHelper;
     private ContactHelper contactHelper;
     private String browser;
+    private dBHelper dbHelper;
 
     public ApplicationManager(String browser ) {
         this.browser = browser;
@@ -30,6 +31,7 @@ public class ApplicationManager {
 
     public void init() throws IOException {
         String target = System.getProperty("target","local");
+        dbHelper = new dBHelper();
 
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
@@ -69,5 +71,9 @@ public class ApplicationManager {
 
     public ContactHelper contactt() {
         return contactHelper;
+    }
+
+    public dBHelper db() {
+        return dbHelper;
     }
 }

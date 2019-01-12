@@ -8,12 +8,14 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
+import ru.stqa.pft.addressbook.appmanager.dBHelper;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class TestBase {
     Logger logger = LoggerFactory.getLogger(TestBase.class);
+
 
     protected static final ApplicationManager app
             = new ApplicationManager(System.getProperty("browser", BrowserType.FIREFOX));
