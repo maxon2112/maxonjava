@@ -1,1 +1,2 @@
-# maxonjava
+# java_pft
+Studying java

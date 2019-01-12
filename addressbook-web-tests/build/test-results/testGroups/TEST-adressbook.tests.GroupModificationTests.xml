@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="adressbook.tests.GroupModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-08T13:00:40" hostname="LAPTOP-4THFCTEK" time="6.98">
-  <properties/>
-  <testcase name="testGroupModification" classname="adressbook.tests.GroupModificationTests" time="6.98"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
