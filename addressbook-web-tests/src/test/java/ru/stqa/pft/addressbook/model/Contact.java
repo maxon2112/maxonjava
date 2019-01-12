@@ -1,9 +1,14 @@
 package ru.stqa.pft.addressbook.model;
 
 import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
 
+@Entity
+@Table(name = "addressbook")
 public class Contact {
 
 
@@ -100,31 +105,7 @@ public class Contact {
     }
 
 
-    public String getEmail2() {
-        return email2;
-    }
-    public String getEmail3() {
-        return email3;
-    }
-    public String getAllPhones() {
-        return allPhones;
-    }
-    public String getAllEmails() {
-        return allEmails;
-    }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getMobilePhone() {
-        return mobile;
-    }
-
-
-    public String getWorkPhone() {
-        return work;
-    }
 
 
     public Contact withFirstname(String firstname) {
@@ -156,7 +137,31 @@ public class Contact {
      this.work = work;
     return this;
     }
+    public String getEmail2() {
+        return email2;
+    }
+    public String getEmail3() {
+        return email3;
+    }
+    public String getAllPhones() {
+        return allPhones;
+    }
+    public String getAllEmails() {
+        return allEmails;
+    }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getMobilePhone() {
+        return mobile;
+    }
+
+
+    public String getWorkPhone() {
+        return work;
+    }
 
 
 
@@ -222,51 +227,101 @@ public class Contact {
         }
 
 
+    @Id
+    @Column(name="id")
 
     private int id = Integer.MAX_VALUE;
 
     @Expose
+    @Column(name="firstname")
+
     private String firstname;
+
     @Expose
+    @Column(name="lastname")
+    //@Type(type= "text")
     private String lastname;
+
     @Expose
-    private File photo;
+    @Column(name="photo")
+    @Type(type= "text")
+    private String photo;
+
+
     @Expose
+    @Column(name="address")
+    @Type(type= "text")
     private String address;
+
     @Expose
+    @Column(name="home")
+    @Type(type= "text")
     private String home;
+
     @Expose
+    @Column(name="email")
+    @Type(type= "text")
     private String email;
+
     @Expose
+    @Column(name="homepage")
+    @Type(type= "text")
     private String homepage;
-    @Expose
+
+    @Transient
+    //@Expose
+   // @Column(name="byear")
+    //@Type(type= "text")
     private String byear;
-    @Expose
+
+    @Transient
+    //@Expose
+    //@Column(name="bmonth")
+  //  @Type(type= "text")
     private String bmonth;
-    @Expose
+
+    @Transient
+    //@Expose
+   // @Column(name="bday")
+   // @Type(type= "text")
     private String bday;
+
     @Expose
+    @Transient
     private String new_group;
+
     @Expose
+    @Column(name="address2")
+    @Type(type= "text")
     private String address2;
     @Expose
+    @Column(name="phone2")
+    @Type(type= "text")
     private String phone2;
     @Expose
+    @Column(name="notes")
+    @Type(type= "text")
     private String notes;
+    @Transient
     private String mobile;
+    @Transient
     private String work;
-    private String email2;
-    private String email3;
-    private String allPhones;
+    @Transient
+   private String email2;
+    @Transient
+   private String email3;
+   @Transient
+   private String allPhones;
+    @Transient
     private String allEmails;
 
 
     public File getPhoto() {
-        return photo;
+        return new File (photo);
     }
 
     public Contact withPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
         return this;
     }
 
