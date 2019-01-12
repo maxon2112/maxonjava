@@ -13,8 +13,8 @@ import static org.testng.AssertJUnit.assertEquals;
 public class ContactModificate extends TestBase {
     @BeforeMethod
     public void ensurePreconditons() {
-        if (!app.contactt().editContact()) {
-
+        if (app.db().contactt().size() == 0) {
+            app.goTo().goToHomePage();
             app.contactt().create(new Contact().withFirstname("max").withLastname("Nemchenko").withAdress("Evropeyscii prosperct").withHome("7981689712").withEmail("maxen_93@mail.ru").
                     withEmail("https://vk.com").withByear("1993").withBmonth("December").withBday("21").withGroup("test1").withAddress2("Saint Peterburg").withPhone2("8").withNotes("mt"));
 
@@ -24,14 +24,15 @@ public class ContactModificate extends TestBase {
          @Test
         public void ModificateNewUser() {
 
-             Contacts before = app.contactt().all();
+             Contacts before = app.db().contactt();
              Contact modifiedContact = before.iterator().next();
              Contact contact = new Contact(). withId(modifiedContact.getId()).withFirstname("Misha").withLastname("Nemo").withAdress("Slavi prosperct").withHome("7981689712").withEmail("maxen_93@mail.ru").
-                     withEmail("https://vk.com").withByear("1993").withBmonth("December").withBday("21").withAddress2("Moscow").withPhone2("8").withNotes("mt");
+                     withEmail("https://vk.com").withAddress2("Moscow").withPhone2("8").withNotes("mt");
 
              app.contactt().modify(contact);
-             Contacts after = app.contactt().all();
-             assertEquals(after.size(), before.size());
+             app.goTo().goToHomePage();
+             assertThat(app.contactt().ContactCount(), equalTo(before.size()));
+             Contacts after = app.db().contactt();
              assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
 
         }

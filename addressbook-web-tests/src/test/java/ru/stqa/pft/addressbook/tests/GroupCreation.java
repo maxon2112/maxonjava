@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.tests;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.thoughtworks.xstream.XStream;
+import net.bytebuddy.utility.JavaModule;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.DataProvider;
@@ -41,7 +42,7 @@ public class GroupCreation extends TestBase {
   }
   }
 
-  @Test(dataProvider = "validGroupsFromXml")
+  @Test(dataProvider = "validGroupsFromJson")
   public void testGroupCreation(GroupData group) throws Exception {
     Groups before = app.db().groups();
     app.goTo().groupPage();
@@ -52,7 +53,7 @@ public class GroupCreation extends TestBase {
             group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
   }
 
-  @Test
+  @Test (enabled = false)
   public void testBadGroupCreation() throws Exception {
     app.goTo().groupPage();
     Groups before = app.group().all();

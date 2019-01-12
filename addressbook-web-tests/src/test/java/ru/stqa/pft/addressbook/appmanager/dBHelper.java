@@ -39,7 +39,7 @@ public class dBHelper {
         public Contacts contactt(){
             Session session = sessionFactory.openSession();
             session.beginTransaction();
-            List<Contact> result = session.createQuery( "from Contact").list();
+            List<Contact> result = session.createQuery( "from Contact where deprecated = '0000-00-00' ").list();
             session.getTransaction().commit();
             session.close();
             return new Contacts(result);

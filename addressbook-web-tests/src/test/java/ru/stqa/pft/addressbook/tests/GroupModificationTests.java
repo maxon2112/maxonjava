@@ -28,7 +28,7 @@ public class GroupModificationTests extends TestBase {
         app.goTo().groupPage();
         app.group().modify(group);
         assertThat(app.group().count(), equalTo(before.size()));
-        Groups after=app.group().all();
+        Groups after=app.db().groups();
         assertThat(after, equalTo(before.without(modifedGroup).withAdded(group)));
     }
 

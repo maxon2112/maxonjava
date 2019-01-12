@@ -23,20 +23,20 @@ public class ContactHelper extends HelperBase {
 
         type(By.name("firstname"), contact.getFirstname());
         type(By.name("lastname"), contact.getLastname());
-        attach(By.name("photo"), contact.getPhoto());
+        //attach(By.name("photo"), contact.getPhoto());
         type(By.name("address"), contact.getAddress());
         type(By.name("home"), contact.getHome());
         type(By.name("email"), contact.getEmail());
         type(By.name("homepage"), contact.getHomepage());
-        type(By.name("byear"), contact.getByear());
-        xtype(By.name("bmonth"), contact.getBmonth());
-        xtype(By.name("bday"), contact.getBday());
-        if (creation) {
-            xtype(By.name("new_group"), contact.getGroup());
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
-        } else {
-            Assert.assertFalse(isElementPresent(By.name("new_group")));
-        }
+        //type(By.name("byear"), contact.getByear());
+       // xtype(By.name("bmonth"), contact.getBmonth());
+       // xtype(By.name("bday"), contact.getBday());
+       // if (creation) {
+           // xtype(By.name("new_group"), contact.getGroup());
+          //  new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
+     //   } else {
+           // Assert.assertFalse(isElementPresent(By.name("new_group")));
+      //  }
 
         type(By.name("address2"), contact.getAddress2());
         type(By.name("phone2"), contact.getPhone2());
@@ -123,8 +123,6 @@ public class ContactHelper extends HelperBase {
 //
 
 
-
-
     public Set<Contact> alll() {
         Set<Contact> contacts = new HashSet<Contact>();
         List<WebElement> rows = wd.findElements(By.name("entry"));
@@ -141,9 +139,6 @@ public class ContactHelper extends HelperBase {
         }
         return contacts;
     }
-
-
-
 
 
     public Contact InfoFromEditForm(Contact contact) {
@@ -165,6 +160,10 @@ public class ContactHelper extends HelperBase {
 
     public void initContactModificationById(int id) {
         wd.findElement(By.cssSelector("a[href='edit.php?id=" + id + "']")).click();
+    }
+
+    public int ContactCount() {
+        return wd.findElements(By.name("selected[]")).size();
     }
 }
 

@@ -2,11 +2,14 @@ package ru.stqa.pft.addressbook.model;
 
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.Objects;
 
+@XStreamAlias("contact")
 @Entity
 @Table(name = "addressbook")
 public class Contact {
@@ -22,35 +25,6 @@ public class Contact {
         return this;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Contact contact = (Contact) o;
-
-        if (id != contact.id) return false;
-        if (firstname != null ? !firstname.equals(contact.firstname) : contact.firstname != null) return false;
-        return lastname != null ? lastname.equals(contact.lastname) : contact.lastname == null;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
-        result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
-        return result;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Contact{" +
-                "id=" + id +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                '}';
-    }
 
     public String getFirstname() {
         return firstname;
@@ -227,52 +201,69 @@ public class Contact {
         }
 
 
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", address='" + address + '\'' +
+                ", home='" + home + '\'' +
+                ", email='" + email + '\'' +
+                ", homepage='" + homepage + '\'' +
+                ", address2='" + address2 + '\'' +
+                ", phone2='" + phone2 + '\'' +
+                ", notes='" + notes + '\'' +
+                '}';
+    }
+
+    @XStreamOmitField
     @Id
     @Column(name="id")
-
     private int id = Integer.MAX_VALUE;
 
     @Expose
     @Column(name="firstname")
 
-    private String firstname;
+    private String firstname="" ;
 
     @Expose
     @Column(name="lastname")
     //@Type(type= "text")
-    private String lastname;
+    private String lastname="" ;
 
-    @Expose
-    @Column(name="photo")
-    @Type(type= "text")
+    //@Expose
+    @Transient
+    //Column(name="photo")
+    //@Type(type= "text")
     private String photo;
 
 
     @Expose
     @Column(name="address")
     @Type(type= "text")
-    private String address;
+    private String address="";
 
     @Expose
     @Column(name="home")
     @Type(type= "text")
-    private String home;
+    private String home="";
 
     @Expose
     @Column(name="email")
     @Type(type= "text")
-    private String email;
+    private String email="" ;
 
     @Expose
     @Column(name="homepage")
     @Type(type= "text")
-    private String homepage;
+    private String homepage="" ;
 
     @Transient
     //@Expose
    // @Column(name="byear")
     //@Type(type= "text")
-    private String byear;
+    private String byear="";
 
     @Transient
     //@Expose
@@ -284,24 +275,24 @@ public class Contact {
     //@Expose
    // @Column(name="bday")
    // @Type(type= "text")
-    private String bday;
+    private String bday ;
 
-    @Expose
+    //@Expose
     @Transient
     private String new_group;
 
     @Expose
     @Column(name="address2")
     @Type(type= "text")
-    private String address2;
+    private String address2="";
     @Expose
     @Column(name="phone2")
     @Type(type= "text")
-    private String phone2;
+    private String phone2="";
     @Expose
     @Column(name="notes")
     @Type(type= "text")
-    private String notes;
+    private String notes="";
     @Transient
     private String mobile;
     @Transient
@@ -326,7 +317,26 @@ public class Contact {
     }
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Contact contact = (Contact) o;
+        return id == contact.id &&
+                Objects.equals(firstname, contact.firstname) &&
+                Objects.equals(lastname, contact.lastname) &&
+                Objects.equals(address, contact.address) &&
+                Objects.equals(home, contact.home) &&
+                Objects.equals(email, contact.email) &&
+                Objects.equals(homepage, contact.homepage) &&
+                Objects.equals(address2, contact.address2) &&
+                Objects.equals(phone2, contact.phone2) &&
+                Objects.equals(notes, contact.notes) ;
+    }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstname, lastname, address, home, email, homepage, address2, phone2, notes);
+    }
 }
 
