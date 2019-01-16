@@ -76,7 +76,7 @@ public class ContactDataGenerator {
         for (int i = 0; i < count; i++) {
 
             contacts.add(new Contact().withFirstname("Max"+i).withLastname("Nemchenko").withAdress("Evropeyscii prosperct" +" "+ i).withHome("798168971"+i).withEmail("maxen_9"+i+"@mail.ru").
-                    withHomepage("https://vk.com/"+i).withByear("199"+i).withBmonth("December").withBday("2"+i).withGroup("test1").withAddress2("Saint Peterburg").withPhone2(""+i).withNotes("mt"+i));
+                    withHomepage("https://vk.com/"+i).withByear("199"+i).withBmonth("December").withBday("2"+i).withAddress2("Saint Peterburg").withPhone2(""+i).withNotes("mt"+i));
         }
             return contacts;
 
