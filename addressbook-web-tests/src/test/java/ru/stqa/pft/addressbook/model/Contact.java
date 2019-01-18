@@ -65,7 +65,17 @@ public class Contact {
     }
 
     public Groups getGroups() {
+        if (groups == null) {
+            groups = new HashSet<>();
+        }
         return new Groups(groups);
+    }
+    public Contact inGroup(GroupData group){
+        if (groups == null) {
+            groups = new HashSet<>();
+        }
+        groups.add(group);
+        return this;
     }
 
     public String getAddress2() {
@@ -79,9 +89,6 @@ public class Contact {
     public String getNotes() {
         return notes;
     }
-
-
-
 
 
     public Contact withFirstname(String firstname) {
@@ -106,22 +113,27 @@ public class Contact {
     }
 
     public Contact WithMobilePhone(String mobile) {
-     this.mobile = mobile;
-     return this;
+        this.mobile = mobile;
+        return this;
     }
+
     public Contact WithWorkPhone(String work) {
-     this.work = work;
-    return this;
+        this.work = work;
+        return this;
     }
+
     public String getEmail2() {
         return email2;
     }
+
     public String getEmail3() {
         return email3;
     }
+
     public String getAllPhones() {
         return allPhones;
     }
+
     public String getAllEmails() {
         return allEmails;
     }
@@ -138,7 +150,6 @@ public class Contact {
     public String getWorkPhone() {
         return work;
     }
-
 
 
     public Contact withHomepage(String homepage) {
@@ -162,7 +173,6 @@ public class Contact {
     }
 
 
-
     public Contact withAddress2(String address2) {
         this.address2 = address2;
         return this;
@@ -179,25 +189,30 @@ public class Contact {
         return this;
     }
 
-        public Contact withEmail2(String email2) {
-            this.email2 = email2;
-            return this;
-        }
+    public Contact withEmail2(String email2) {
+        this.email2 = email2;
+        return this;
+    }
 
-        public Contact withEmail3(String email3) {
-            this.email3 = email3;
-            return this;
-        }
+    public Contact withEmail3(String email3) {
+        this.email3 = email3;
+        return this;
+    }
 
-        public Contact withEmail(String email) {
-            this.email = email; return this;
-        }
-        public Contact withAllPhones(String allPhones) {
-            this.allPhones = allPhones; return this;
-        }
-        public Contact withAllEmails(String allEmails) {
-            this.allEmails = allEmails; return this;
-        }
+    public Contact withEmail(String email) {
+        this.email = email;
+        return this;
+    }
+
+    public Contact withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
+
+    public Contact withAllEmails(String allEmails) {
+        this.allEmails = allEmails;
+        return this;
+    }
 
 
     @Override
@@ -218,18 +233,18 @@ public class Contact {
 
     @XStreamOmitField
     @Id
-    @Column(name="id")
+    @Column(name = "id")
     private int id = Integer.MAX_VALUE;
 
     @Expose
-    @Column(name="firstname")
+    @Column(name = "firstname")
 
-    private String firstname="" ;
+    private String firstname = "";
 
     @Expose
-    @Column(name="lastname")
+    @Column(name = "lastname")
     //@Type(type= "text")
-    private String lastname="" ;
+    private String lastname = "";
 
     //@Expose
     @Transient
@@ -239,76 +254,76 @@ public class Contact {
 
 
     @Expose
-    @Column(name="address")
-    @Type(type= "text")
-    private String address="";
+    @Column(name = "address")
+    @Type(type = "text")
+    private String address = "";
 
     @Expose
-    @Column(name="home")
-    @Type(type= "text")
-    private String home="";
+    @Column(name = "home")
+    @Type(type = "text")
+    private String home = "";
 
     @Expose
-    @Column(name="email")
-    @Type(type= "text")
-    private String email="" ;
+    @Column(name = "email")
+    @Type(type = "text")
+    private String email = "";
 
     @Expose
-    @Column(name="homepage")
-    @Type(type= "text")
-    private String homepage="" ;
+    @Column(name = "homepage")
+    @Type(type = "text")
+    private String homepage = "";
 
     @Transient
     //@Expose
-   // @Column(name="byear")
+    // @Column(name="byear")
     //@Type(type= "text")
-    private String byear="";
+    private String byear = "";
 
     @Transient
     //@Expose
     //@Column(name="bmonth")
-  //  @Type(type= "text")
+    //  @Type(type= "text")
     private String bmonth;
 
     @Transient
     //@Expose
-   // @Column(name="bday")
-   // @Type(type= "text")
-    private String bday ;
+    // @Column(name="bday")
+    // @Type(type= "text")
+    private String bday;
 
 
     @Expose
-    @Column(name="address2")
-    @Type(type= "text")
-    private String address2="";
+    @Column(name = "address2")
+    @Type(type = "text")
+    private String address2 = "";
     @Expose
-    @Column(name="phone2")
-    @Type(type= "text")
-    private String phone2="";
+    @Column(name = "phone2")
+    @Type(type = "text")
+    private String phone2 = "";
     @Expose
-    @Column(name="notes")
-    @Type(type= "text")
-    private String notes="";
+    @Column(name = "notes")
+    @Type(type = "text")
+    private String notes = "";
     @Transient
     private String mobile;
     @Transient
     private String work;
     @Transient
-   private String email2;
+    private String email2;
     @Transient
-   private String email3;
-   @Transient
-   private String allPhones;
+    private String email3;
+    @Transient
+    private String allPhones;
     @Transient
     private String allEmails;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name="id"),inverseJoinColumns=@JoinColumn(name="group_id"))
+    @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
 
-    private Set<GroupData> groups= new HashSet<GroupData>();
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
     public File getPhoto() {
-        return new File (photo);
+        return new File(photo);
     }
 
     public Contact withPhoto(File photo) {
@@ -331,12 +346,15 @@ public class Contact {
                 Objects.equals(homepage, contact.homepage) &&
                 Objects.equals(address2, contact.address2) &&
                 Objects.equals(phone2, contact.phone2) &&
-                Objects.equals(notes, contact.notes) ;
+                Objects.equals(notes, contact.notes);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(id, firstname, lastname, address, home, email, homepage, address2, phone2, notes);
     }
+
+
 }
+
 

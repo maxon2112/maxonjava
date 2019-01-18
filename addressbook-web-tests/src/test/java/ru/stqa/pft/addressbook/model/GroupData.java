@@ -27,20 +27,23 @@ public class GroupData {
 
     @Expose
     @Column(name = "group_header")
-    @Type(type="text")
+    @Type(type = "text")
     private String header;
 
     @Expose
     @Column(name = "group_footer")
-    @Type(type="text")
+    @Type(type = "text")
     private String footer;
 
-@ManyToMany(mappedBy = "groups")
-private Set<Contact> contacts = new HashSet<Contact>();
+    @ManyToMany(mappedBy = "groups")
+    private Set<Contact> contacts = new HashSet<Contact>();
 
-public Set<Contact> getContacts(){
-    return contacts;
-}
+    public Contacts getContacts() {
+        if (contacts == null) {
+            contacts = new HashSet<>();
+        }
+        return new Contacts(contacts);
+    }
 
     public GroupData withId(int id) {
         this.id = id;
@@ -64,10 +67,10 @@ public Set<Contact> getContacts(){
     }
 
 
-
     public int getId() {
         return id;
     }
+
     public String getName() {
         return name;
     }

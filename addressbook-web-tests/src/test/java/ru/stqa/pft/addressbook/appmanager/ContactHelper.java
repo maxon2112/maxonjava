@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.Contact;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.util.HashSet;
 import java.util.List;
@@ -29,14 +30,14 @@ public class ContactHelper extends HelperBase {
         type(By.name("email"), contact.getEmail());
         type(By.name("homepage"), contact.getHomepage());
         //type(By.name("byear"), contact.getByear());
-       // xtype(By.name("bmonth"), contact.getBmonth());
-       // xtype(By.name("bday"), contact.getBday());
-       // if (creation) {
-           // xtype(By.name("new_group"), contact.getGroup());
-          //  new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
-     //   } else {
-           // Assert.assertFalse(isElementPresent(By.name("new_group")));
-      //  }
+        // xtype(By.name("bmonth"), contact.getBmonth());
+        // xtype(By.name("bday"), contact.getBday());
+        // if (creation) {
+        // xtype(By.name("new_group"), contact.getGroup());
+        //  new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contact.getGroup());
+        //   } else {
+        // Assert.assertFalse(isElementPresent(By.name("new_group")));
+        //  }
 
         type(By.name("address2"), contact.getAddress2());
         type(By.name("phone2"), contact.getPhone2());
@@ -165,8 +166,20 @@ public class ContactHelper extends HelperBase {
     public int ContactCount() {
         return wd.findElements(By.name("selected[]")).size();
     }
-}
 
+
+    public void addContactInGroup(Contact contact, GroupData group) {
+        selectContactById(contact.getId());
+        click(By.xpath("//select[@name='to_group']//option[@value='" + group.getId() + "']"));
+        click(By.name("add"));
+    }
+
+    public void deleteContactOffGroup(Contact contact, GroupData group) {
+        click(By.xpath("//select[@name='group']//option[@value='" + group.getId() + "']"));
+        selectContactById(contact.getId());
+        click(By.name("remove"));
+    }
+}
 
 //table[@id='maintable']/tbody/tr[8]/td[2]
 
