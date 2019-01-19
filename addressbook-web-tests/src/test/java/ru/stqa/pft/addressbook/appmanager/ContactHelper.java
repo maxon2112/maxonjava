@@ -213,12 +213,16 @@ public class ContactHelper extends HelperBase {
         returnToHomePage();
     }
 
-    public void adddContactToGroup() {
-        selectContact(1);
-        addToGroup(1);
-        returnToHomePage();
+
+    public void adddGroupSimpleLocators(){
+        wd.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='import'])[1]/following::input[3]")).click();
+        wd.findElement(By.name("to_group")).click();
+        wd.findElement(By.name("add")).click();
+        wd.findElement(By.linkText("group page \"test1\"")).click();
     }
 }
+
+
 //table[@id='maintable']/tbody/tr[8]/td[2]
 
 
