@@ -6,9 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-/**
- * Created by EOnegin on 22.09.2017.
- */
+
 public class FtpHelper {
 
   private final ApplicationManager app;

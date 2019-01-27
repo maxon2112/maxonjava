@@ -8,9 +8,7 @@ import ru.stqa.pft.mantis.appmanager.ApplicationManager;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * Created by EOnegin on 20.07.2017.
- */
+
 public class TestBase {
 
   protected static final ApplicationManager app
