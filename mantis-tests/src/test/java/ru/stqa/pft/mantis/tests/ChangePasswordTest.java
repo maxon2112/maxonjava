@@ -34,6 +34,7 @@ public class ChangePasswordTest extends TestBase {
     app.resetPassword().resetPassword();
     List<MailMessage> mailMessages = app.mail().waitForMail(1, 20000);
     String resetPasswordLink = findResetPasswordLink(mailMessages, email);
+
     app.resetPassword().changePasswordFinish(resetPasswordLink, newPassword);
     assertTrue(session.login(user, newPassword));
     assertTrue(session.isLoggedInAsUser(user));

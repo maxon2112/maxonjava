@@ -10,6 +10,7 @@ import java.util.List;
 
 import static org.testng.AssertJUnit.assertTrue;
 
+
 public class RegistrationTests extends TestBase {
 
   //@BeforeMethod
@@ -22,7 +23,7 @@ public class RegistrationTests extends TestBase {
     long now = System.currentTimeMillis();
     String user = String.format("user%s", now);
     String password = "password";
-    //String email = String.format("user%s@localhost.localdomain", now);
+    //String email = String.format("user%s@localhost.localdomain", now); - почему-то james не хочет принимать почту на адреса в домене localhost.localdomain
     String email = String.format("user%s@localhost", now);
     app.james().createUser(user, password);
     app.registration().start(user, email);
