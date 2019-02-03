@@ -34,17 +34,16 @@ public class TestBase {
     }
   }
 
-  private boolean isIssueOpen(int issueId) throws MalformedURLException, ServiceException, RemoteException {
-    MantisConnectPortType mc = app.soap().getMantisConnect();
-    IssueData issueData = mc.mc_issue_get("administrator", "root", BigInteger.valueOf(issueId));
-    int resolution = issueData.getResolution().getId().intValue();
-    if (resolution == 20) {
-      return false;
-    } else {
-      return true;
+  public boolean isIssueOpen(int issueId) throws MalformedURLException, ServiceException, RemoteException {
+      MantisConnectPortType mc = app.soap().getMantisConnect();
+      IssueData issueInfo = mc.mc_issue_get("administrator", "root", BigInteger.valueOf(issueId));
+      if(issueInfo.getStatus().equals("resolved")){
+        return true;
+      } else
+      {return false;}
     }
 
-  }
+
 
   @AfterSuite(alwaysRun = true)
   public void tearDown() throws IOException {
