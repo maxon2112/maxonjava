@@ -1,13 +1,17 @@
 package ru.stqa.pft.rest.model;
 
-/**
- * Created by EOnegin on 30.09.2017.
- */
+
 public class Issue {
 
   private int id;
   private String subject;
   private String description;
+  protected String state_name;
+
+
+  public String getStatus() {
+    return state_name;
+  }
 
   public int getId() {
     return id;
