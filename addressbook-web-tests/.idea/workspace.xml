@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="749ae119-afb3-442a-a718-c80df44bbd07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/local.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -79,26 +79,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#1479#1480#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/local.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+              <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-contacts.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -113,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="204">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
@@ -127,13 +119,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="731">
               <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
               <folding>
+                <element signature="e#2355#2356#0" expanded="true" />
                 <element signature="e#2380#2381#0" expanded="true" />
+                <element signature="e#2416#2417#0" expanded="true" />
                 <element signature="e#2450#2451#0" expanded="true" />
+                <element signature="e#2489#2490#0" expanded="true" />
                 <element signature="e#2528#2529#0" expanded="true" />
+                <element signature="e#2567#2568#0" expanded="true" />
                 <element signature="e#2603#2604#0" expanded="true" />
+                <element signature="e#2631#2632#0" expanded="true" />
                 <element signature="e#2662#2663#0" expanded="true" />
               </folding>
             </state>
@@ -157,7 +154,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
+            <state relative-caret-position="68">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
@@ -232,8 +229,8 @@
         <option value="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java" />
         <option value="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java" />
         <option value="$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/local.properties" />
       </list>
     </option>
   </component>
@@ -243,8 +240,8 @@
     </enabled-run-configurations>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="175" />
-    <option name="y" value="357" />
+    <option name="x" value="140" />
+    <option name="y" value="141" />
     <option name="width" value="1410" />
     <option name="height" value="1040" />
   </component>
@@ -254,8 +251,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,6 +294,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="addressbook" type="462c0819:PsiDirectoryNode" />
               <item name="appmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="addressbook-web-tests" type="b2602c69:ProjectViewProjectNode" />
@@ -493,10 +499,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="102" y="380" width="1128" height="832" extended-state="1" />
+    <frame x="112" y="113" width="1128" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40636703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.414794" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -833,17 +839,50 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-contacts.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-groups.xml">
+    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="731">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../rest-sample/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+          <folding>
+            <element signature="e#2355#2356#0" expanded="true" />
+            <element signature="e#2380#2381#0" expanded="true" />
+            <element signature="e#2416#2417#0" expanded="true" />
+            <element signature="e#2450#2451#0" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
+            <element signature="e#2528#2529#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2603#2604#0" expanded="true" />
+            <element signature="e#2631#2632#0" expanded="true" />
+            <element signature="e#2662#2663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java">
@@ -855,57 +894,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
+        <state relative-caret-position="68">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/tests/RestTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../rest-sample/src/test/java/ru/stqa/pft/rest/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1479#1480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
-          <folding>
-            <element signature="e#2380#2381#0" expanded="true" />
-            <element signature="e#2450#2451#0" expanded="true" />
-            <element signature="e#2528#2529#0" expanded="true" />
-            <element signature="e#2603#2604#0" expanded="true" />
-            <element signature="e#2662#2663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/logback.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-contacts.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-groups.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
         </state>
       </provider>
     </entry>
